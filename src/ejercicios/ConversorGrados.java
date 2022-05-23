@@ -116,14 +116,15 @@ public class ConversorGrados {
 		
 		sliderGrados.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent arg0) {
-				double gradosC, gradosF;
+				double gradosC=0.0;
+				double gradosF=0.0;
 				if (rbCaF.isSelected()) {
 					gradosC= sliderGrados.getValue();
 					gradosF = 32.0 + 9.0*gradosC/5.0;
 				
-				} else {
+				} else if (rbFaC.isSelected()) {
 					gradosF= sliderGrados.getValue();
-					gradosC= (5.0*gradosF/9.0)-32.0;
+					gradosC= 5.0*(gradosF-32.0)/9.0;
 					
 				}
 				lbGradosC.setText(String.format("%.2f", gradosC));
