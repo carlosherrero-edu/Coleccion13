@@ -1,3 +1,4 @@
+package ejercicios;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

@@ -1,3 +1,4 @@
+package ejercicios;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowAdapter;
